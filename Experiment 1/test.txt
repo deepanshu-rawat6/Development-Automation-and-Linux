@@ -1,0 +1,5 @@
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                ✔  took 5s  ─╮
+╰─ touch readme.md                                                                                           ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi readme.md                                                                                              ─╯

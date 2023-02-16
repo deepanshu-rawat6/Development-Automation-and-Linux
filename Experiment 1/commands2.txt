@@ -1,0 +1,540 @@
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ less                                                                                ─╯
+Missing filename ("less --help" for help)
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ man less                                                                            ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1         ✔  took 17s  ─╮
+╰─ ls -l                                                                               ─╯
+total 16
+-rw-rw-r-- 1 spectre spectre 7072 Jan 12 14:13 commands.txt
+-rwxrwxr-x 1 spectre spectre   49 Jan 12 13:55 input.sh
+-rwxr--r-- 1 spectre spectre    6 Jan 12 14:09 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ man ls                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1         ✔  took 23s  ─╮
+╰─ ls -l | less                                                                        ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1         ✔  took 22s  ─╮
+╰─ man less                                                                            ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ man more                                                                            ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1         ✔  took 18s  ─╮
+╰─ ls                                                                                  ─╯
+commands.txt  input.sh  permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ cat commands.txt | less                                                             ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1         ✔  took 14s  ─╮
+╰─ cat commands.txt | less                                                             ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                 INT ✘ ─╮
+╰─ cat commands.txt | more                                                             ─╯
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ ./input.sh                                                                             
+                   ─╯
+Zephyrus
+Hello, Zephyrus
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+      ✔  took 5s  ─╮
+╰─ touch readme.md                                                                        
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ vi readme.md                                                                           
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+     ✔  took 30s  ─╮
+╰─ vi readme.md                                                                           
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+     ✔  took 16s  ─╮
+╰─ vim readme                                                                             
+                   ─╯
+zsh: command not found: vim
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+             127 ✘ ─╮
+╰─ vi readme                                                                              
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+     ✔  took 13s  ─╮
+╰─ touch permission.txt                                                                   
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ ls                                                                                     
+                   ─╯
+input.sh  permission.txt  readme.md
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ rm readme.md                                                                           
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ ls                                                                                     
+                   ─╯
+input.sh  permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ ls -l                                                                                  
+                   ─╯
+total 4
+-rwxrwxr-x 1 spectre spectre 49 Jan 12 13:55 input.sh
+-rw-rw-r-- 1 spectre spectre  0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ ls -l permission.txt                                                                   
+                   ─╯
+-rw-rw-r-- 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ chmod +x permission.txt                                                                
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ ls -l permission.txt                                                                   
+                   ─╯
+-rwxrwxr-x 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ chmod -x permission.txt                                                                
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ ls -l permission.txt                                                                   
+                   ─╯
+-rw-rw-r-- 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ chmod 744 permission.txt                                                               
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ ls -l permission.txt                                                                   
+                   ─╯
+-rwxr--r-- 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ ./permission.txt                                                                       
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+                 ✔ ─╮
+╰─ vi permission.txt                                                                      
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+     ✔  took 24s  ─╮
+╰─ vi permission.txt                                                                      
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+     ✔  took 11s  ─╮
+╰─ ./permission.txt                                                                       
+                   ─╯
+./permission.txt: 1: hello: not found
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+             127 ✘ ─╮
+╰─ vi permission.txt                                                                      
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+     ✔  took 16s  ─╮
+╰─ vi permission.txt                                                                      
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+     ✔  took 40s  ─╮
+╰─ vi permission.txt                                                                      
+                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                          
+     ✔  took 14s  ─╮
+╰─ ./permission.txt                                                                       
+                   ─╯
+total 8
+-rwxrwxr-x 1 spectre spectre 49 Jan 12 13:55 input.sh
+-rwxr--r-- 1 spectre spectre  6 Jan 12 14:09 permission.txt
+
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ man tail                                                                            ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1          ✔  took 7s  ─╮
+╰─ tail commands.txt                                                                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 40s  ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 14s  ─╮
+╰─ ./permission.txt                                                                                          ─╯
+total 8
+-rwxrwxr-x 1 spectre spectre 49 Jan 12 13:55 input.sh
+-rwxr--r-- 1 spectre spectre  6 Jan 12 14:09 permission.txt
+
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ tail -n 10 commands.txt                                                             ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 40s  ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 14s  ─╮
+╰─ ./permission.txt                                                                                          ─╯
+total 8
+-rwxrwxr-x 1 spectre spectre 49 Jan 12 13:55 input.sh
+-rwxr--r-- 1 spectre spectre  6 Jan 12 14:09 permission.txt
+
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ head commands.txt                                                                   ─╯
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ./input.sh                                                                                                ─╯
+Zephyrus
+Hello, Zephyrus
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                ✔  took 5s  ─╮
+╰─ touch readme.md                                                                                           ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ head -n 10 commands.txt                                                             ─╯
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ./input.sh                                                                                                ─╯
+Zephyrus
+Hello, Zephyrus
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                ✔  took 5s  ─╮
+╰─ touch readme.md                                                                                           ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ cat commands.txt | more                                                             ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                 INT ✘ ─╮
+╰─ cat commands.txt | tail                                                             ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 40s  ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 14s  ─╮
+╰─ ./permission.txt                                                                                          ─╯
+total 8
+-rwxrwxr-x 1 spectre spectre 49 Jan 12 13:55 input.sh
+-rwxr--r-- 1 spectre spectre  6 Jan 12 14:09 permission.txt
+
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ cat commands.txt | head                                                             ─╯
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ./input.sh                                                                                                ─╯
+Zephyrus
+Hello, Zephyrus
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                ✔  took 5s  ─╮
+╰─ touch readme.md                                                                                           ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ cat commands.txt | tail -n 100                                                      ─╯
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ./input.sh                                                                                                ─╯
+Zephyrus
+Hello, Zephyrus
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                ✔  took 5s  ─╮
+╰─ touch readme.md                                                                                           ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 30s  ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 16s  ─╮
+╰─ vim readme                                                                                                ─╯
+zsh: command not found: vim
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                       127 ✘ ─╮
+╰─ vi readme                                                                                                 ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 13s  ─╮
+╰─ touch permission.txt                                                                                      ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls                                                                                                        ─╯
+input.sh  permission.txt  readme.md
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ rm readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls                                                                                                        ─╯
+input.sh  permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l                                                                                                     ─╯
+total 4
+-rwxrwxr-x 1 spectre spectre 49 Jan 12 13:55 input.sh
+-rw-rw-r-- 1 spectre spectre  0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l permission.txt                                                                                      ─╯
+-rw-rw-r-- 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ chmod +x permission.txt                                                                                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l permission.txt                                                                                      ─╯
+-rwxrwxr-x 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ chmod -x permission.txt                                                                                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l permission.txt                                                                                      ─╯
+-rw-rw-r-- 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ chmod 744 permission.txt                                                                                  ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l permission.txt                                                                                      ─╯
+-rwxr--r-- 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ./permission.txt                                                                                          ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 24s  ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 11s  ─╮
+╰─ ./permission.txt                                                                                          ─╯
+./permission.txt: 1: hello: not found
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                       127 ✘ ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 16s  ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 40s  ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 14s  ─╮
+╰─ ./permission.txt                                                                                          ─╯
+total 8
+-rwxrwxr-x 1 spectre spectre 49 Jan 12 13:55 input.sh
+-rwxr--r-- 1 spectre spectre  6 Jan 12 14:09 permission.txt
+
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ cat commands.txt | head -n 100                                                      ─╯
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ./input.sh                                                                                                ─╯
+Zephyrus
+Hello, Zephyrus
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                ✔  took 5s  ─╮
+╰─ touch readme.md                                                                                           ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 30s  ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 16s  ─╮
+╰─ vim readme                                                                                                ─╯
+zsh: command not found: vim
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                       127 ✘ ─╮
+╰─ vi readme                                                                                                 ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 13s  ─╮
+╰─ touch permission.txt                                                                                      ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls                                                                                                        ─╯
+input.sh  permission.txt  readme.md
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ rm readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls                                                                                                        ─╯
+input.sh  permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l                                                                                                     ─╯
+total 4
+-rwxrwxr-x 1 spectre spectre 49 Jan 12 13:55 input.sh
+-rw-rw-r-- 1 spectre spectre  0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l permission.txt                                                                                      ─╯
+-rw-rw-r-- 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ chmod +x permission.txt                                                                                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l permission.txt                                                                                      ─╯
+-rwxrwxr-x 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ chmod -x permission.txt                                                                                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l permission.txt                                                                                      ─╯
+-rw-rw-r-- 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ chmod 744 permission.txt                                                                                  ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l permission.txt                                                                                      ─╯
+-rwxr--r-- 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ./permission.txt                                                                                          ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 24s  ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 11s  ─╮
+╰─ ./permission.txt                                                                                          ─╯
+./permission.txt: 1: hello: not found
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                       127 ✘ ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 16s  ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 40s  ─╮
+╰─ vi permission.txt                                                                                         ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 14s  ─╮
+╰─ ./permission.txt                                                                                          ─╯
+total 8
+-rwxrwxr-x 1 spectre spectre 49 Jan 12 13:55 input.sh
+-rwxr--r-- 1 spectre spectre  6 Jan 12 14:09 permission.txt
+
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─                                                                                     ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                 INT ✘ ─╮
+╰─ cat commands.txt | head -n 50                                                       ─╯
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ./input.sh                                                                                                ─╯
+Zephyrus
+Hello, Zephyrus
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                ✔  took 5s  ─╮
+╰─ touch readme.md                                                                                           ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 30s  ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 16s  ─╮
+╰─ vim readme                                                                                                ─╯
+zsh: command not found: vim
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                       127 ✘ ─╮
+╰─ vi readme                                                                                                 ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                               ✔  took 13s  ─╮
+╰─ touch permission.txt                                                                                      ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls                                                                                                        ─╯
+input.sh  permission.txt  readme.md
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ rm readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls                                                                                                        ─╯
+input.sh  permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l                                                                                                     ─╯
+total 4
+-rwxrwxr-x 1 spectre spectre 49 Jan 12 13:55 input.sh
+-rw-rw-r-- 1 spectre spectre  0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l permission.txt                                                                                      ─╯
+-rw-rw-r-- 1 spectre spectre 0 Jan 12 13:59 permission.txt
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ chmod +x permission.txt                                                                                   ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ ls -l permission.txt                                                                                      ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ cat commands.txt | head -n 10 | tail -n 5                                           ─╯
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                ✔  took 5s  ─╮
+╰─ touch readme.md                                                                                           ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ cat commands.txt | head -n 10 | tail -n 5 > test.txt                                ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─ cat test.txt                                                                        ─╯
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                ✔  took 5s  ─╮
+╰─ touch readme.md                                                                                           ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                                           ✔ ─╮
+╰─ vi readme.md                                                                                              ─╯
+
+╭─    ~/Desktop/Development & Automation in Linux/Experiment 1                     ✔ ─╮
+╰─   
